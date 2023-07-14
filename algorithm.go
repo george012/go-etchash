@@ -133,6 +133,11 @@ func makeHasher(h hash.Hash) hasher {
 	}
 }
 
+// SeedHash public Function to used
+func SeedHash(block uint64) []byte {
+	return seedHash(block)
+}
+
 // seedHash is the seed to use for generating a verification cache and the mining
 // dataset.
 func seedHash(block uint64) []byte {
